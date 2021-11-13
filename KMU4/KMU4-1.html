@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box {background-color: blue; width: 100px; height: 100px;}
+        #box2 {width: 100px; height: 100px; border-style: solid; border-color: coral; border-width: 3px;}
+        #box3 {width: 100px; height: 100px; border-style: solid; border-color: coral; border-width: 3px; border-radius: 10px;}
+        #box4 {background-color: blue; width: 100px; height: 100px; margin:40px;}
+        #box5 {background-color: blue; width: 100px; height: 100px; margin-left: 100px; margin-top: 200px; margin-right: 300px; margin-bottom: 400px;}
+        #box6 {background-color: blue; width: 100px; height: 100px; padding:40px; color: white;}
+        #box7 {background-color: blue; width: 100px; height: 100px; padding-left: 100px; padding-top: 200px; padding-right: 300px; padding-bottom: 400px;}
+        #box8 {background : linear-gradient(to top, #ff0844, #ffb199);width: 100px;)
+        #box9 {background: linear-gradient(to top, #fddb92 0%, #d1fdff 100%);}
+        #box10 {background-color: blue;}
+        #c {width :100px}
+        #container {text-align: center;}
+        /* text-align 속성은 inline 속성에만 적용됨 */
+    </style>
+</head>
+<body>
+    <div id="box"></div>
+    <div id="box2"></div>
+    <div id="box3"></div>
+    <div id="box4"></div>
+    <div id="box5"></div>
+    <div id="box6">패딩 적용</div>
+    <div id="box7"></div>
+    <div id="box8"></div>
+    <div id="box9"></div>
+    <div id="box10"></div>
+    <div id="box11"></div>
+    <div id="box12"></div>
+    <div id="box13"></div>
+    <div id="box14"></div>
+    <div id="box15"></div>
+    <div id="box16"></div>
+    <div id="box17"></div>
+    <div id="box18"></div>
+    <div id="box19"></div>
+    <!-- div.a*5 -->
+    <div class="a"></div>
+    <div class="a"></div>
+    <div class="a"></div>
+    <div class="a"></div>
+    <div class="a"></div>
+    <!-- div#b*3 -->
+    <div id="b"></div>
+    <div id="b"></div>
+    <div id="b"></div>
+    <div id="container">
+        <p id="c">block속성</p>
+        <span>inline속성</span>
+    </div>
+</body>
+</html>
+dispay속성 
+-block : 무조건 새로운 줄에서 시작, 끝까지 차지
+-inline : 나란히 정렬, 자기 자신까지만 차지
+display로 속성을 바꿀 수 있음
