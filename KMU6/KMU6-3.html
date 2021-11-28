@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var x = 20;
+        var y = 30;
+        // if문
+        if(y>x) {
+            document.write("y가 x보다 큽니다.");
+        }
+        if(y<x) {
+            document.write("x가 y보다 큽니다.");
+        }
+
+        // else문
+        if(y>x) {
+            document.write("y가 x보다 큽니다.")
+        } 
+        else { 
+            document.write("x가 y보다 큽니다.");
+        }
+
+        // else if문
+        if(y>x) {
+            document.write("y가 x보다 큽니다.");
+        }
+        else if(y<x) {
+            document.write("x가 y보다 큽니다.");
+        }
+        else {
+            document.write("x와 y가 같습니다.");
+        }
+
+        //실습
+        var a = 1000;
+        var b = 1001;
+
+        if(a<b) {
+            document.write("a보다 b가 큽니다.");
+        }
+        else if(a>b) {
+            document.write("a가 b보다 큽니다.");
+        }
+        else {
+            document.write("a와 b가 같습니다.");
+        }
+        //switch문
+        var count = 2;
+        switch(count) {
+            case 1: //count == 1
+            document.write("한 번입니다.");
+            break; //case 하나가 끝나면 무조건 break 넣기
+            case 2:
+            document.write("두 번입니다.");
+            break;
+            default :
+            document.write("여러 번입니다.")
+        }
+    </script>
+</body>
+</html>

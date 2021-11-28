@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var x = 10;
+        var y = 10;
+        var z = 10;
+
+        x -= 5;
+        y += 5;
+        document.write(x);
+        document.write(y);
+
+        x ++
+        document.write(x);
+
+        var x = 10;
+        var y = x-- + 5 + --x;
+        document.write(y);
+
+        var x = 10;
+        var y = 10;
+        var z = 9;
+        console.log(x==y); //true
+        console.log(x==z); //false
+        console.log(x!=y); //false
+        console.log(x>z); //true
+
+        var x = true;
+        var y = false;
+        console.log(x&&y); //false //and연산자
+        console.log(x||y); //true //or연산자
+        console.log(!x); //false //not연산자
+
+        var x = 10;
+        var y = 20;
+        if(y>x) {
+            document.write("y가 x보다 큽니다.");
+        }
+    </script>
+</body>
+</html>
