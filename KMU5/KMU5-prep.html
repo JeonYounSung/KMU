@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=\, initial-scale=1.0">
-    <link rel="stylesheet" href="KMU5-5.css">
+    <link rel="stylesheet" href="KMU5-prep.css">
     <title>media platform</title>
 </head>
 <body>
     <header>
-        <div id="header_main">
-            <div class="fla_l">
+        <div style="display: block;">
+            <div style="float: left;">
                 <h1 id="plat_name">Platform_name</h1>
                 <nav id="a">
                     <a href="#">이미지</a>
@@ -20,11 +20,11 @@
                     <a href="#">커뮤니티</a>
                 </nav>
             </div>
-            <div class="fla_r">
+            <div style="float: right;">
                 <nav>
                     <ul>
                         <li class="dropdown" id="my_info">
-                            <div class="drop_title">내 정보</div>
+                            <div class="drop_title" onclick="Dropdown()">내 정보</div>
                             <div class="drop_content" id="dc-1">
                                 <a href="#">계정</a>
                                 <a href="#">보안</a>
@@ -39,15 +39,15 @@
             <nav id="drop">
                 <ul>
                     <li class="dropdown nav_dropdown">
-                        <div class="drop_title nav-1_drop" id="nav-1_drop-content-1">즐겨찾기</div>
-                        <div class="drop_content-2" id="dc-2">
+                        <div class="drop_title nav-1_drop">즐겨찾기</div>
+                        <div class="drop_content" id="dc-2">
                             <a href="#">클립한 콘텐츠</a>
                             <a href="#">재생목록</a>
                         </div>
                     </li>
                     <li class="dropdown">
                         <div class="drop_title nav-1_drop">내 활동</div>
-                        <div class="drop_content-2" id="dc-3">
+                        <div class="drop_content" id="dc-3">
                             <a href="#">내 활동 내역</a>
                             <a href="#">나의 콘텐츠</a>
                         </div>
@@ -78,29 +78,61 @@
         </aside>
         <div id="main">
             <article>
-                <img src="https://www.youtube.com/img/desktop/yt_1200.png">
+                <img src="#">
                 <div>
-                    <h1>제목</h1>
-                    <p>설명</p>
+                    <div style="float: left;">
+                        <h1>제목</h1>
+                        <p>설명</p>
+                    </div>
+                    <div>
+                        <div class="commentBody">
+                            <h3 id="commentTitle">댓글</h3>
+                            <input id="commentName" placeholder="이름을 입력하세요."/>
+                            <textarea id="commentInput" placeholder="내용을 입력해주세요."></textarea>
+                            <button id="commentBtn" onclick="post()">작성</button>
+                        </div>
+                        <div id="commentTimeline"></div>
+                    </div>
                 </div>
             </article>
             <article>
-                <img src="https://www.youtube.com/img/desktop/yt_1200.png">
+                <img src="#">
                 <div>
-                    <h1>제목</h1>
-                    <p>설명</p>
+                    <div style="float: left;">
+                        <h1>제목</h1>
+                        <p>설명</p>
+                    </div>
                 </div>
             </article>
             <article>
-                <img src="https://www.youtube.com/img/desktop/yt_1200.png">
+                <img src="#">
                 <div>
-                    <h1>제목</h1>
-                    <p>설명</p>
+                    <div style="float: left;">
+                        <h1>제목</h1>
+                        <p>설명</p>
+                    </div>
                 </div>
             </article>
         </div>
     </main>
     <footer>
     </footer>
+    <script>
+        let timeLine = document.querySelector('#commentTimeline')
+        function post() {
+            const postName = document.querySelector('#commentName').value;
+            const postInput = document.querySelector('#commentInput').value;
+            console.log('이름 : ', postName);
+            console.log('내용 : ', postInput);
+            timeLine.innerHTML += '<div id="timeLine">' + 
+                    '   <div class="container">' +
+                    '       <h4 id="postingName">' + 'ID : ' + postName + '</h4>' +
+                    '       <p id="postingInput">' + postInput + '</p>' +
+                    '   </div>' +
+                    '</div>'
+                    }
+
+
+    </script>
 </body>
 </html>
