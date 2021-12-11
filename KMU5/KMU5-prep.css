@@ -63,7 +63,7 @@ header {
 .drop_content a {
     display: block;
     color: white;
-}
+} 
 
 .dropdown:hover .drop_content {
     display: block;
